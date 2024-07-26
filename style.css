@@ -231,11 +231,9 @@ header.sticky{
     padding: 10px;
     background-color: #f3a8a4;
     color: var(--bg-color);
-    width: 100px;
     display: block;
     text-align: center;
     transition: all .40s ease;
-
 }
 .course-items div a:hover{
     transform:scale(1.2);
@@ -244,6 +242,46 @@ header.sticky{
     color: var(--second-color);
     font-size: var(--p-font);
     margin-top: 20px;
+}
+.course-items{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,auto));
+    gap: 1.5rem;
+    width: max-content;
+    align-items: center;
+    cursor: pointer;
+    margin-top: 4rem;
+}
+.course-items div a{
+    padding: 10px;
+    background-color:var(--main-color);
+    color: var(--bg-color);
+    display: block;
+    text-align: center;
+    transition: all .40s ease;
+}
+#course-content{
+    padding: 26px 10%;
+}
+#btn {
+    text-align: center;
+    margin: 20px 0px;
+}
+#btn a{
+    padding: 10px 20px;
+    border-radius: 5rem;
+    border: 1px solid #e9ecef;
+    box-shadow: -11.729px -11.729px 32px rgb(255 255 255 / 15%);
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all .42s ease;
+    color: var(--text-color);
+}
+#btn a:hover{
+    background-color: var(--main-color);
+    color: var(--bg-color);
 }
 .coding{
     background: linear-gradient(to right top, #f48a85,#62c7f6);
