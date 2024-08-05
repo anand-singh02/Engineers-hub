@@ -511,3 +511,18 @@ header.sticky{
 .sub-menu ul li:hover .sub-menu-2{
     display: block;
 }
+/* Courses Page >>>>>>>>>>>>>>  */
+#course-content{
+    display: grid;
+    justify-content: center;
+    padding: 5% 3%;
+}
+#course-content .course-items{
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,auto));
+    gap: 20px;
+
+}
+#course-content .subjects{
+    box-shadow: 6px 6px 10px #c5c5c5,-6px -6px 10px #ffffff;
+}
